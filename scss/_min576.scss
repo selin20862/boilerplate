@@ -1,0 +1,13 @@
+
+@media (min-width: 576px) {
+    body {
+    background-color:burlywood;
+}
+
+.resolution::after {
+  content: "<576";
+}
+
+
+  }
+  

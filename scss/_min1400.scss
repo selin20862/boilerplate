@@ -1,0 +1,8 @@
+@media (min-width: 1400px) {
+    body {
+    background-color:hotpink;
+}
+.resolution::after {
+    content: "<1400";
+}
+  }

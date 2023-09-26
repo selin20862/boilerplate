@@ -1,0 +1,8 @@
+@media (min-width: 1200px) {
+    body {
+    background-color:gold;
+}
+.resolution::after {
+    content: "<1200";
+}
+  }
