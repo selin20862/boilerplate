@@ -37,5 +37,36 @@
 			
 		],
 		"description": "écrire jquery click"
+	},
+	"html header": {
+		"scope": "html",
+		"prefix": "header",
+		"body": [
+			
+	
+			"<header>"
+			"	<nav>"
+			"		<ul>"
+			"			<li>'$1'</li>"
+			"			<li></li>"
+			"			<li></li>"
+			"		</ul>"
+			"	</nav>"
+			"</header>"
+			
+		],
+		"description": "écrire html header"
+	},
+	"php loop": {
+		"scope": "php",
+		"prefix": "wp",
+		"body": [
+			
+		],
+		"description": "écrire php loop"
 	}
+
+
+
+
 }
