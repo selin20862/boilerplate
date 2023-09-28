@@ -97,30 +97,29 @@ $( document ).ready(function() {
         var btn = $(this).attr('data-class');
 
         if(btn == '*') {
-        $('article').show();
+            
+        $('article').css("display","block").css("opacity","0");
   
-        // gsap.from("article", {
-        // // duration:1,
-        // opacity:0,
-        // display:'none',
-        // delay:0.5,
-        // // x: -800,
-        // stagger: 0.3
-        // });
+        gsap.to("article", {
+        opacity:1,
+        delay:0.5,
+        duration:1,
+        stagger: 0.3
+        });
         
         } else {
 
       
+        $('article').hide();
+        $('article'+btn).css("display","block").css('opacity','0');
 
-        $('article').show();
-        $('article:not("'+btn+'")').hide();
 
-        // gsap.from("article", {
-        // duration:1,
-        // delay:0.5,
-        // x: -800,
-        // stagger: 0.3
-        // });
+        gsap.to("article", {
+        duration:1,
+        delay:0.2,
+        opacity:1,
+        stagger: 0.1
+        });
        
 
         }
