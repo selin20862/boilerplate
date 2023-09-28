@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body class="section-articles">
+    <section class="articles">
+
+<h1>Articles</h1>
+
+<div class="filtres">
+    <h2>Filtres :</h2>
+    <a href="" id="tout" data-class="*">Tout</a>
+    <a href="" id="edition" data-class=".edition">Edition</a>
+    <a href="" id="troisd" data-class=".troisd">3D</a>
+    <a href="" id="web" data-class=".web">Web</a>
+</div>
+
+
+<div class="mesarticles">
+    <article class="web">
+        <img src="img/image.jpg" alt="">
+        <h2>Product title</h2>
+    </article>
+    <article class="troisd">
+        <img src="img/image.jpg" alt="">
+        <h2>Product title</h2>
+    </article>
+    <article class="troisd">
+        <img src="img/image.jpg" alt="">
+        <h2>Product title</h2>
+    </article>
+    <article class="edition">
+        <img src="img/image.jpg" alt="">
+        <h2>Product title</h2>
+    </article>
+    <article class="web">
+        <img src="img/image.jpg" alt="">
+        <h2>Product title</h2>
+    </article>
+    <article class="web">
+        <img src="img/image.jpg" alt="">
+        <h2>Product title</h2>
+    </article>
+    <article class="edition">
+        <img src="img/image.jpg" alt="">
+        <h2>Product title</h2>
+    </article>
+    <article class="troisd">
+        <img src="img/image.jpg" alt="">
+        <h2>Product title</h2>
+    </article>
+    <article class="edition">
+        <img src="img/image.jpg" alt="">
+        <h2>Product title</h2>
+    </article>
+    <article class="edition">
+        <img src="img/image.jpg" alt="">
+        <h2>Product title</h2>
+    </article>
+    <article class="web">
+        <img src="img/image.jpg" alt="">
+        <h2>Product title</h2>
+    </article>
+    <article class="troisd">
+        <img src="img/image.jpg" alt="">
+        <h2>Product title</h2>
+    </article>
+
+</div>
+
+
+
+
+
+
+    </section>
+    
+
+
+    <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script>
+
+$( document ).ready(function() {
+
+        $('.filtres a').on('click', function(e) {
+        e.preventDefault();
+        $('.filtres a').removeClass('current');
+        $(this).addClass('current');
+
+
+
+        var btn = $(this).attr('data-class');
+
+        if(btn == '*') {
+            $('article').show();
+        } else {
+
+        $('article').show();
+        $('article:not("'+btn+'")').hide();
+
+        }
+
+         } );//click
+
+
+         });//ready
+
+    </script>
+</body>
+</html>
