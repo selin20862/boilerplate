@@ -70,7 +70,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 50px 10px;
+  margin: 50px;
 }
 .section-articles .articles .filtres a {
   color: brown;
@@ -103,7 +103,7 @@ body {
   border: 15px black groove;
 }
 .section-articles .articles .mesarticles article.troisd {
-  border: yellow 15px groove;
+  border: darkorange 15px groove;
 }
 .section-articles .articles .mesarticles article.edition {
   border: 15px groove burlywood;

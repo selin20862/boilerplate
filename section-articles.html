@@ -82,6 +82,7 @@
 
 
     <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script>
 
 $( document ).ready(function() {
@@ -96,11 +97,31 @@ $( document ).ready(function() {
         var btn = $(this).attr('data-class');
 
         if(btn == '*') {
-            $('article').show();
+        $('article').show();
+  
+        // gsap.from("article", {
+        // // duration:1,
+        // opacity:0,
+        // display:'none',
+        // delay:0.5,
+        // // x: -800,
+        // stagger: 0.3
+        // });
+        
         } else {
+
+      
 
         $('article').show();
         $('article:not("'+btn+'")').hide();
+
+        // gsap.from("article", {
+        // duration:1,
+        // delay:0.5,
+        // x: -800,
+        // stagger: 0.3
+        // });
+       
 
         }
 

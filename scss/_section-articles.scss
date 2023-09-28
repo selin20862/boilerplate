@@ -15,7 +15,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            margin: 50px 10px;
+            margin: 50px;
 
             a {
                 color: brown;
@@ -63,7 +63,7 @@
 
 
                 &.troisd {
-                    border: yellow 15px groove;
+                    border: darkorange 15px groove;
                 }
 
                 &.edition {
