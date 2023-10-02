@@ -1,5 +1,5 @@
 .section-articles {
-    background-color: white;
+    background-color:white;
 
 
 
@@ -15,7 +15,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            margin: 50px;
+            margin: 50px 0;
 
             a {
                 color: brown;
@@ -42,18 +42,15 @@
 
         .mesarticles {
             display: flex;
-            gap: 120px;
+            gap: $gapsize;
             flex-wrap: wrap;
-            justify-content: center;
-
 
 
 
 
             article{
             box-sizing: border-box;
-            // border: red 3px solid;
-            width: calc(25% - 120px);
+            width: calc((100% - $gapsize * 3) / 4);
             aspect-ratio: 1/1;
 
 
