@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+<input type="text" id="un">
+<div id="contenu1">contenu1</div>
+
+<hr>
+
+<input type="text" id="deux">
+<button id="btn" type="button">Click</button>
+<div id="salut">salut je suis </div>
+
+<hr>
+
+<input type="text" id="trois">
+<button id="click" type="button">Click</button>
+<div id="ans">salut j'ai <span></span> ans</div>
+
+<hr>
+
+<input type="text" id="quatre">
+<div id="key">
+    <h1>ceci est mon h1</h1>
+</div>
+
+
+
+    <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script>
+
+$( document ).ready(function() {
+
+    $('#un').on('blur', function() {
+    // e.preventDefault();
+    var un = $(this).val();
+    $('#contenu1').html(un);
+
+     } );//click
+
+     $('#btn').on('click', function() {
+    //  e.preventDefault();
+     var input = $('#deux').val();
+     $('#salut').append(input);
+
+     
+    } );//click
+
+
+     $('#click').on('click', function() {
+    //  e.preventDefault();
+     var txt = $('#trois').val();
+     $('#ans span').html(txt);
+
+
+
+      } );//click
+
+
+      $('#quatre').on('keyup', function() {
+    //   e.preventDefault();
+      var valeur = $(this).val();
+      $('#key h1').html(valeur);
+
+
+       } );//click
+
+
+ });//ready
+
+
+    </script>
+</body>
+</html>

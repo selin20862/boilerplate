@@ -113,4 +113,12 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+body {
+  background-color: #fff;
+}
+
+hr {
+  margin: 50px 0;
 }/*# sourceMappingURL=style.css.map */
