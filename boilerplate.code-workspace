@@ -19,7 +19,11 @@
 				"extensionName": ".css",
 				"savePath": "~/../css/"
 			}
-		]
+		],
+		// "liveSassCompile.settings.excludeList": [ 
+		// 	"**/scss/bootstrap/**",
+		// 	".vscode/**" 
+		// ]
 
 	}
 }
